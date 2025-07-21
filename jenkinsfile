@@ -1,29 +1,29 @@
 pipeline {
-    agent any  // Use any available Jenkins agent
+    agent any
 
     stages {
         stage('Build') {
             steps {
-                echo 'Building the application...'
-                // Example: sh 'make build'
+                echo "build completed successfully"
             }
         }
 
         stage('Test') {
             steps {
-                echo 'Running tests...'
-                // Example: sh 'make test'
+                echo "test completed successfully"
+            }
+        }
+
+        stage('Package') {
+            steps {
+                echo "package completed successfully"
             }
         }
 
         stage('Deploy') {
             steps {
-                echo 'Deploying the application...'
-                // Example: sh 'make deploy'
+                echo "deploy completed successfully"
             }
         }
     }
 }
-
-
-## This Jenkinsfile defines a simple pipeline with three stages: Build, Test, and Deploy.
